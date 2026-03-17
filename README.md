@@ -148,4 +148,7 @@ Fernando Martín Cordeschi
 Estudiante TUDAI – UNICEN  
 Desarrollador Junior Full Stack  
 
+## 📫 Contacto
+
 Email: fernandocordeschi@hotmail.com
+LinkedIn: www.linkedin.com/in/fernando-martín-cordeschi-5b1b24308
