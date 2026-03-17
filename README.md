@@ -1,200 +1,151 @@
-# Inmobiliaria
+# Sistema de gestión inmobiliaria
 
-## Descripción
-Inmobiliaria es una aplicación web diseñada para gestionar propiedades y dueños. Permite a los usuarios agregar, editar, eliminar y listar propiedades, así como gestionar la información de los dueños de estas propiedades. La aplicación está desarrollada utilizando el patrón de diseño MVC (Modelo-Vista-Controlador) para mantener una estructura ordenada y escalable.
+## 📌 Descripción
 
-### Características
-- **Gestión de Dueños**:
-  - Listar todos los dueños.
-  - Ver detalles de un dueño específico.
-  - Agregar un nuevo dueño.
-  - Editar la información de un dueño.
-  - Eliminar un dueño (con restricciones de integridad referencial).
+Inmobiliaria es una aplicación web desarrollada para gestionar propietarios y propiedades. Permite realizar operaciones CRUD completas (crear, leer, actualizar y eliminar) sobre las entidades principales del sistema.
 
-- **Gestión de Propiedades**:
-  - Listar todas las propiedades.
-  - Ver detalles de una propiedad específica.
-  - Filtrar propiedades por dueño.
-  - Agregar una nueva propiedad.
-  - Editar la información de una propiedad.
-  - Eliminar una propiedad.
+La aplicación fue desarrollada aplicando el patrón de diseño MVC (Modelo Vista Controlador) para lograr una estructura organizada, mantenible y escalable.
 
-- **Autenticación**:
-  - Registro de nuevos usuarios.
-  - Inicio de sesión y cierre de sesión.
-  - Middleware de autenticación para proteger rutas.
+También implementa autenticación mediante JWT y una API REST para la gestión de datos.
 
-## Instalación
-Para instalar la aplicación en tu entorno local:
+---
+
+## 🚀 Funcionalidades
+
+### Gestión de Dueños
+
+- Listar propietarios
+- Ver detalle de propietario
+- Crear propietario
+- Editar propietario
+- Eliminar propietario
+- Validación de integridad referencial
+
+### Gestión de Propiedades
+
+- Listar propiedades
+- Ver detalles
+- Filtrar por propietario
+- Crear propiedades
+- Editar propiedades
+- Eliminar propiedades
+
+### Autenticación
+
+- Registro de usuarios
+- Inicio de sesión
+- Cierre de sesión
+- Protección de rutas
+- Generación de token JWT
+
+### API REST
+
+- Endpoints CRUD
+- Filtros de datos
+- Ordenamiento de resultados
+- Uso correcto de códigos HTTP
+- Manejo de errores
+
+---
+
+## ⚙️ Tecnologías utilizadas
+
+- PHP
+- MySQL
+- HTML5
+- CSS3
+- JavaScript
+- API REST
+- JWT
+- Arquitectura MVC
+- Git
+- GitHub
+
+---
+
+## 🏗 Arquitectura
+
+El sistema fue desarrollado utilizando:
+
+- Patrón MVC
+- Separación de responsabilidades
+- Arquitectura en capas
+- API REST desacoplada
+- Autenticación basada en tokens
+- Organización modular del código
+
+---
+
+## 🧠 Conceptos aplicados
+
+- Programación orientada a objetos
+- Arquitectura MVC
+- CRUD completo
+- Diseño de API REST
+- Autenticación JWT
+- Manejo de bases de datos relacionales
+- Integridad referencial
+- Validación de datos
+- Manejo de errores HTTP
+- Buenas prácticas de desarrollo
+
+---
+
+## 💻 Instalación
 
 1. Clonar el repositorio:
-    ```bash
-    git clone https://github.com/fernandocordeschi/tpe-web2-2024.git
-    ```
+
+```
+git clone https://github.com/fernandocordeschi/tpe-web2-2024.git
+```
 
 2. Configurar la base de datos:
-    - Crear una base de datos en tu servidor MySQL.
-    - Importar el archivo `db_inmobiliaria.sql` para crear las tablas necesarias.
-    - Configurar las credenciales de la base de datos en el archivo `config.php`.
 
-3. Accede a la aplicación en tu navegador:
-    ```
-    http://localhost.......
-    ```
+- Crear una base de datos en MySQL
+- Importar el archivo db_inmobiliaria.sql
+- Configurar las credenciales en config.php
 
-Datos de ingreso:
-Usuario: "webadmin"
-Password: "admin"
+3. Ejecutar en un servidor local (XAMPP o similar)
 
-## Uso
-Una vez que la aplicación esté en funcionamiento, con la misma podrás:
+4. Acceder desde el navegador:
 
-- **Gestionar Dueños**: Navegar a la sección de dueños para listar, agregar, editar o eliminar dueños.
-- **Gestionar Propiedades**: Navegar a la sección de propiedades para listar, agregar, editar o eliminar propiedades.
-- **Autenticarse**: Registrar nuevos usuarios, iniciar sesión y cerrar sesión.
+```
+http://localhost/
+```
 
+---
 
-Integrantes:
+## 🔐 Datos de prueba
 
-Barberena Jose, dni 26.664.694, e-mail: jibbarberena@gmail.com
+Usuario: webadmin  
+Password: admin  
 
-Fernando Cordeschi, dni 29.555.240, e-mail: fernandocordeschi@hotmail.com
+---
 
+## 📈 Estado del proyecto
 
+Proyecto académico finalizado desarrollado para práctica de desarrollo backend, arquitectura MVC y APIs REST.
 
-1. Obtener todos los propietarios
+---
 
-    Ruta: http://localhost/tpe_parte3/api/owner
-    Método: GET
-    Descripción: Lista todos los propietarios.
-    Parámetros: Ninguno.
-    
+## 🎯 Objetivo del proyecto
 
-2. Obtener todos los propietarios ordenados por nombre
+Aplicar conocimientos de:
 
-    Ruta: http://localhost/tpe_parte3/api/owner?orderBy=nombre
-    Método: GET
-    Descripción: Lista todos los propietarios ordenados por el campo 'nombre'.
-    Parámetros: nombre.
+- Desarrollo backend
+- Arquitectura de software
+- APIs REST
+- Seguridad básica
+- Bases de datos
+- Control de versiones con Git
+- Buenas prácticas de programación
 
+---
 
-3. Obtener todos los propietarios ordenados por id
+## 👨‍💻 Desarrollador
 
-    Ruta: http://localhost/tpe_parte3/api/owner?orderBy=id
-    Método: GET
-    Descripción: Lista todos los propietarios ordenados por el campo 'id' de manera ascedente.
-    Parámetros: orderBy=id.
+Fernando Martín Cordeschi  
+Estudiante TUDAI – UNICEN  
+Desarrollador Junior Full Stack  
 
-
-4. Obtener todos los propietarios ordenados por id de manera descendente
-
-    Ruta: http://localhost/tpe_parte3/api/owner?orderBy=idDESC
-    Método: GET
-    Descripción: Lista todos los propietarios ordenados por el campo 'id' de manera descente.
-    Parámetros: orderBy=idDESC.
-
-
-5. Obtener un propietario por ID
-
-    Ruta: http://localhost/tpe_parte3/api/owner/7
-    Método: GET
-    Descripción: Obtiene un propietario específico por su ID.
-    Parámetros:
-        id: 7
-    Ejemplo de respuesta:
-        {
-        "id_duenio": 7,
-        "nombre_duenio": "dsfsd",
-        "apellido_duenio": "sfs",
-        "email_duenio": "sfe@dgs.com"
-        }
-
-    Para que devuelva '404'
-
-    Ruta: http://localhost/tpe_parte3/api/owner/1
-    Método: GET
-    Descripción: Obtiene un propietario específico por su ID.
-    Parámetros:
-        id: 1
-    Ejemplo de respuesta:
-    "Error: No se encontró dueño", 404 
-
-6. Crear un propietario
-
-    Ruta: /owner
-    Método: POST
-    Descripción: Crea un nuevo propietario.
-    Cuerpo de la solicitud:
-
-{
-    "nombre": "Carlos Martínez",
-    "email": "carlos@ejemplo.com"
-}
-
-Ejemplo de respuesta:
-
-    {
-        "id": 3,
-        "nombre": "Carlos Martínez",
-        "email": "carlos@ejemplo.com"
-    }
-
-7. Actualizar un propietario
-
-    Ruta: /owner/:id
-    Método: PUT
-    Descripción: Actualiza los datos de un propietario específico.
-    Parámetros:
-        id: ID del propietario.
-    Cuerpo de la solicitud:
-
-{
-    "nombre": "Carlos Martínez Actualizado",
-    "email": "carlos_nuevo@ejemplo.com"
-}
-
-Ejemplo de respuesta:
-
-    {
-        "id": 3,
-        "nombre": "Carlos Martínez Actualizado",
-        "email": "carlos_nuevo@ejemplo.com"
-    }
-
-8. Eliminar un propietario
-
-    Ruta: /owner/:id
-    Método: DELETE
-    Descripción: Elimina un propietario específico por su ID.
-    Parámetros:
-        id: ID del propietario a eliminar.
-    Ejemplo de respuesta:
-
-    {
-        "message": "Propietario eliminado con éxito."
-    }
-
-9. Obtener token de usuario
-
-    Ruta: /usuarios/token
-    Método: GET
-    Descripción: Obtiene un token JWT para el usuario autenticado.
-    Ejemplo de respuesta:
-
-    {
-        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZXhwIjoxNjA4NjA2MzI5fQ.DycdLVZW9FwL9gbt1z9u2kP8Qx0NS-Mm4-3ht1YqVgo"
-    }
-
-Códigos de Respuesta
-
-La API devuelve los siguientes códigos de estado HTTP:
-
-    200 OK: La solicitud se procesó correctamente.
-    201 Created: El recurso se creó con éxito.
-    400 Bad Request: La solicitud es inválida, por ejemplo, falta un parámetro requerido.
-    404 Not Found: El recurso solicitado no existe.
-
-Requerimientos No Funcionales
-
-    Autenticación JWT: Los endpoints de creación y actualización (POST, PUT) requieren un token JWT válido.
-    Filtrado, ordenado y paginado: Algunos de los servicios permiten filtrar, ordenar y paginar los resultados de las colecciones.
+Email: fernandocordeschi@hotmail.com
